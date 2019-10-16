@@ -22,9 +22,10 @@ public class DGIM {
         Iterator<Bucket> iterator = this.queue.iterator();
         int result = 0;
         int curValue = 0;
+        long startTime = this.queue.iterator().next().getTime();
         while(iterator.hasNext()){
             Bucket curBucket = iterator.next();
-            if((curBucket.getTime()-curBucket.getTime())<this.size){
+            if((startTime-curBucket.getTime())<this.size){
                 curValue = curBucket.getSize();
                 result+=curValue;
             }else{
