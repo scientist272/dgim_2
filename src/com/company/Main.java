@@ -53,19 +53,19 @@ public class Main {
             while(iterator_16.hasNext()){
                 System.out.println("Buckets for 16 :"+iterator_16.next());
             }
-            System.out.println("There are "+dgim[0].getContent()+" times 16");
+            System.out.println("There are "+dgim[0].getContent()+" count of 16");
             while(iterator_8.hasNext()){
                 System.out.println("Buckets for 8 :"+iterator_8.next());
             }
-            System.out.println("There are "+dgim[1].getContent()+" times 8");
+            System.out.println("There are "+dgim[1].getContent()+" count of 8");
             while(iterator_4.hasNext()){
                 System.out.println("Buckets for 4 :"+iterator_4.next());
             }
-            System.out.println("There are "+dgim[2].getContent()+" times 4");
+            System.out.println("There are "+dgim[2].getContent()+" count of 4");
             while(iterator_2.hasNext()){
                 System.out.println("Buckets for 2 :"+iterator_2.next());
             }
-            System.out.println("There are "+dgim[3].getContent()+" times 2");
+            System.out.println("There are "+dgim[3].getContent()+" count 2");
 
             while(iterator_1.hasNext()){
                 System.out.println("Buckets for 1 :"+iterator_1.next());
@@ -74,7 +74,7 @@ public class Main {
 
             int result = (dgim[0].getContent()*16 + dgim[1].getContent()*8
                     + dgim[2].getContent()*4 + dgim[3].getContent()*2 + dgim[4].getContent())/1000;
-            System.out.println("Average price: "+result);
+            System.out.println("The average price: "+result);
         } catch (IOException e) {
             e.printStackTrace();
         }
